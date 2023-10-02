@@ -11604,12 +11604,20 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  padding:60px 60px 30px 60px;
   border-right: 1px solid #dee2e6;
 }
 
 .about-section .about-card:last-child {
   border-right: none;
+}
+@media screen and (max-width: 767px) {
+  .about-section .about-card{
+    padding:30px 60px 20px 60px !important;
+  }
+  section{
+    padding-bottom: 50px !important;
+  }
 }
 
 .contact {
