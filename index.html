@@ -15,17 +15,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #09090b;
-      --bg2:     #0d0d0f;
-      --surface: #18181b;
-      --card:    #1c1c1f;
+      --bg:      #0c0906;
+      --bg2:     #100d09;
+      --surface: #181209;
+      --card:    #1d160d;
       --border:  rgba(255,255,255,.07);
-      --border2: rgba(59,130,246,.35);
-      --accent:  #3b82f6;
-      --accent2: #60a5fa;
-      --text:    #fafafa;
-      --muted:   #71717a;
-      --dim:     #a1a1aa;
+      --border2: rgba(249,115,22,.32);
+      --accent:  #f97316;
+      --accent2: #fb923c;
+      --text:    #f5ede6;
+      --muted:   #7a6a5a;
+      --dim:     #b0967e;
       --white:   #ffffff;
       --radius:  14px;
       --radius-sm: 9px;
@@ -60,12 +60,12 @@
     }
     .orb-1 {
       width: 560px; height: 560px;
-      background: radial-gradient(circle, rgba(59,130,246,.12), transparent 70%);
+      background: radial-gradient(circle, rgba(249,115,22,.11), transparent 70%);
       top: -180px; right: -120px;
     }
     .orb-2 {
       width: 420px; height: 420px;
-      background: radial-gradient(circle, rgba(99,102,241,.09), transparent 70%);
+      background: radial-gradient(circle, rgba(251,146,60,.07), transparent 70%);
       bottom: 5%; left: -140px;
     }
 
@@ -98,7 +98,7 @@
       font-size: .78rem; font-weight: 800;
       color: #fff; letter-spacing: .02em;
       flex-shrink: 0;
-      box-shadow: 0 0 18px rgba(59,130,246,.35);
+      box-shadow: 0 0 18px rgba(249,115,22,.35);
     }
     .logo-name {
       font-family: 'Space Grotesk', sans-serif;
@@ -121,7 +121,7 @@
     }
     .nav-cta:hover {
       opacity: .9;
-      box-shadow: 0 0 20px rgba(59,130,246,.4);
+      box-shadow: 0 0 20px rgba(249,115,22,.4);
     }
     .hamburger {
       display: none; flex-direction: column; gap: 5px;
@@ -198,15 +198,15 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        linear-gradient(to right, rgba(59,130,246,.025) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(59,130,246,.025) 1px, transparent 1px);
+        linear-gradient(to right, rgba(249,115,22,.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(249,115,22,.025) 1px, transparent 1px);
       background-size: 80px 80px; pointer-events: none;
     }
     .hero-content { padding-top: 80px; position: relative; z-index: 2; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 10px;
-      background: rgba(59,130,246,.08);
-      border: 1px solid rgba(59,130,246,.2);
+      background: rgba(249,115,22,.08);
+      border: 1px solid rgba(249,115,22,.2);
       border-radius: 8px; padding: 7px 14px;
       font-size: .78rem; font-weight: 500;
       color: var(--accent2); margin-bottom: 28px;
@@ -245,7 +245,7 @@
     }
     .btn-primary:hover {
       opacity: .92; transform: translateY(-1px);
-      box-shadow: 0 6px 24px rgba(59,130,246,.35);
+      box-shadow: 0 6px 24px rgba(249,115,22,.35);
     }
     .btn-outline {
       padding: 13px 28px; background: transparent; color: var(--dim);
@@ -318,7 +318,7 @@
     }
     .about-location-badge .pin {
       width: 32px; height: 32px; border-radius: 8px;
-      background: rgba(59,130,246,.1); border: 1px solid var(--border2);
+      background: rgba(249,115,22,.1); border: 1px solid var(--border2);
       display: flex; align-items: center; justify-content: center;
       font-size: .9rem; flex-shrink: 0;
     }
@@ -379,7 +379,7 @@
     .skill-card:hover::after { opacity: 1; }
     .skill-card-icon {
       width: 42px; height: 42px; border-radius: 10px;
-      background: rgba(59,130,246,.09); border: 1px solid rgba(59,130,246,.18);
+      background: rgba(249,115,22,.09); border: 1px solid rgba(249,115,22,.18);
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 18px; font-size: 1.15rem;
     }
@@ -396,7 +396,7 @@
     }
     .tag:hover {
       border-color: var(--border2); color: var(--accent2);
-      background: rgba(59,130,246,.07);
+      background: rgba(249,115,22,.07);
     }
 
     /* ── Timeline ────────────────────────────────────── */
@@ -420,7 +420,7 @@
     .timeline-item::before {
       content: ''; position: absolute; left: -28px; top: 7px;
       width: 8px; height: 8px; border-radius: 50%;
-      background: var(--accent); box-shadow: 0 0 10px rgba(59,130,246,.5);
+      background: var(--accent); box-shadow: 0 0 10px rgba(249,115,22,.5);
     }
     .timeline-date {
       font-size: .7rem; font-weight: 700; letter-spacing: .1em;
@@ -460,7 +460,7 @@
     .project-card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
     .project-tag {
       padding: 3px 10px; border-radius: 6px;
-      background: rgba(59,130,246,.1); border: 1px solid rgba(59,130,246,.2);
+      background: rgba(249,115,22,.1); border: 1px solid rgba(249,115,22,.2);
       font-size: .7rem; font-weight: 600; color: var(--accent2);
     }
     .project-card-title {
@@ -526,7 +526,7 @@
     }
     .form-control:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(59,130,246,.1);
+      box-shadow: 0 0 0 3px rgba(249,115,22,.1);
     }
     .form-control::placeholder { color: var(--muted); }
     textarea.form-control { resize: vertical; min-height: 120px; }
