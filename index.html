@@ -15,17 +15,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #0c0906;
-      --bg2:     #100d09;
-      --surface: #181209;
-      --card:    #1d160d;
-      --border:  rgba(255,255,255,.07);
-      --border2: rgba(249,115,22,.32);
+      --bg:      #0a0a0a;
+      --bg2:     #0f0f0f;
+      --surface: #171717;
+      --card:    #1a1a1a;
+      --border:  rgba(255,255,255,.08);
+      --border2: rgba(249,115,22,.35);
       --accent:  #f97316;
       --accent2: #fb923c;
-      --text:    #f5ede6;
-      --muted:   #7a6a5a;
-      --dim:     #b0967e;
+      --text:    #f2f2f2;
+      --muted:   #6b6b6b;
+      --dim:     #a3a3a3;
       --white:   #ffffff;
       --radius:  14px;
       --radius-sm: 9px;
@@ -305,7 +305,7 @@
     .about-photo::before {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(to bottom, transparent 55%, rgba(9,9,11,.6) 100%);
+      background: linear-gradient(to bottom, transparent 55%, rgba(10,10,10,.65) 100%);
       z-index: 1;
     }
     .about-photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -353,49 +353,47 @@
     .info-item .info-value { font-size: .87rem; font-weight: 500; color: var(--text); }
 
     /* ── Skills ─────────────────────────────────────── */
-    #skills { background: var(--bg); }
+    #skills { background: var(--bg2); }
     .skills-header {
       display: flex; justify-content: space-between;
       align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px;
     }
     .skills-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 16px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 1px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius); overflow: hidden;
     }
     .skill-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 26px;
-      transition: border-color .22s, transform .22s;
+      background: var(--bg2);
+      padding: 30px;
+      transition: background .22s, transform .22s;
       position: relative; overflow: hidden;
     }
-    .skill-card::after {
+    .skill-card::before {
       content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-      opacity: 0; transition: opacity .25s;
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 0% 0%, rgba(249,115,22,.06), transparent 60%);
+      opacity: 0; transition: opacity .3s;
     }
-    .skill-card:hover {
-      border-color: rgba(255,255,255,.13); transform: translateY(-3px);
-    }
-    .skill-card:hover::after { opacity: 1; }
+    .skill-card:hover { background: #141414; }
+    .skill-card:hover::before { opacity: 1; }
     .skill-card-icon {
-      width: 42px; height: 42px; border-radius: 10px;
-      background: rgba(249,115,22,.09); border: 1px solid rgba(249,115,22,.18);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 18px; font-size: 1.15rem;
+      font-size: 1.5rem; margin-bottom: 16px; line-height: 1;
     }
     .skill-card h4 {
-      font-size: .7rem; font-weight: 700; letter-spacing: .12em;
-      text-transform: uppercase; color: var(--accent2); margin-bottom: 14px;
+      font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
     }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag {
-      padding: 4px 12px; border-radius: 6px;
-      background: rgba(255,255,255,.04); border: 1px solid var(--border);
-      font-size: .75rem; font-weight: 500; color: var(--dim);
+      padding: 5px 11px; border-radius: 100px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+      font-size: .74rem; font-weight: 500; color: var(--dim);
       transition: border-color .18s, color .18s, background .18s;
     }
     .tag:hover {
-      border-color: var(--border2); color: var(--accent2);
+      border-color: rgba(249,115,22,.45); color: var(--accent2);
       background: rgba(249,115,22,.07);
     }
 
