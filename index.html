@@ -88,23 +88,13 @@
 
     /* Logo */
     .nav-logo {
-      display: flex; align-items: center; gap: 10px; text-decoration: none;
-    }
-    .logo-mark {
-      width: 34px; height: 34px; border-radius: 8px;
-      background: var(--accent);
-      display: flex; align-items: center; justify-content: center;
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .78rem; font-weight: 800;
-      color: #fff; letter-spacing: .02em;
-      flex-shrink: 0;
-      box-shadow: 0 0 18px rgba(249,115,22,.35);
+      font-size: 1rem; font-weight: 600;
+      letter-spacing: -.02em; line-height: 1;
+      text-decoration: none;
     }
-    .logo-name {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: .95rem; font-weight: 600;
-      color: var(--white); letter-spacing: -.02em;
-    }
+    .logo-bracket { color: var(--accent); font-weight: 500; }
+    .logo-name-text { color: var(--white); font-weight: 700; }
 
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
@@ -573,8 +563,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <div class="logo-mark">BB</div>
-        <span class="logo-name">Bipin Bhatt</span>
+        <span class="logo-bracket">&lt;</span><span class="logo-name-text">bipin</span><span class="logo-bracket">/&gt;</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -958,7 +947,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
-        <div class="logo-mark" style="width:28px;height:28px;font-size:.7rem;">BB</div>
+        <span class="nav-logo" style="font-size:.9rem;"><span class="logo-bracket">&lt;</span><span class="logo-name-text">bipin</span><span class="logo-bracket">/&gt;</span></span>
         <span class="footer-copy"><span style="color:var(--dim);">Bipin Bhatt</span> &nbsp;·&nbsp; &copy; <script>document.write(new Date().getFullYear())</script></span>
       </div>
       <a href="#hero" class="btn-outline" style="padding:7px 16px;font-size:.78rem;">
